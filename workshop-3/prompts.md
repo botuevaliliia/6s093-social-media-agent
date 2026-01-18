@@ -43,10 +43,7 @@ the billing is setup. and let's use e2-micro size
 we have this virtual machine in gcloud. you have the gcloud cli to ssh into that machine. We need to install sqlite
 
 5.
-let's also deploy a fastapi server that uses that database and make sure the fast api is setup properly as a service on linux so it persists when we restart the instance. use port 80 for the server
-
-5.1
-i cant access the api from my browser, can you create a firewall rule to allow http traffic on port 80?
+let's also deploy a fastapi server that uses that database and make sure the fast api is setup properly as a service on linux so it persists when we restart the instance. use port 80 for the server and set up the firewall rule so i can access it from my browser
 
 (Optional) 6.
 can you set up a cron job to automatically run the post generator every day at 9am? skip the telegram approval for automated posts
