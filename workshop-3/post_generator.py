@@ -33,7 +33,7 @@ def generate_post(docs_content: str) -> str:
 
     response = client.chat.completions.create(
         model="nvidia/nemotron-3-nano-30b-a3b:free",
-        max_tokens=1024,
+        max_tokens=2000,  # Reasoning models need extra tokens for internal reasoning
         messages=[
             {
                 "role": "system",
